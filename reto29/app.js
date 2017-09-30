@@ -1,1 +1,15 @@
+function addObjectProperty(obj1, key, obj2) {
+    return obj1[key]=obj2
+}
 
+//datos del ejemplo
+var person1 = {
+  name: 'Joe Blow',
+  role: 'schlub'
+};
+var person2 = {
+  name: 'Mr. Burns',
+  role: 'supervisor'
+};
+addObjectProperty(person1, 'manager', person2);
+console.log(person1.manager);
