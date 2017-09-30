@@ -1,13 +1,15 @@
-function getLongestOfThreeWords(word1, word2, word3) { 
-    if(word1.length >=word2.length && word1.length >= word3.length ){
-        return word1
-    }else if(word2.length > word1.length && word2.length >= word3.length){
-        return word2
-    }else if(word3.length > word1.length && word3.length > word2.length){
-        return word3
+function computeSumBetween(num1, num2) {
+    var suma= 0;
+    if(num2<num1){
+        return 0
+    }else{
+        for(var i = num1; i<num2; i++){
+            suma += i
+        }
     }
+    return suma
 }
 
 //datos del ejemplo
-var output = getLongestOfThreeWords('estos', 'tres', 'palabras');
-console.log(salida);
+var salida = computeSumBetween (2, 5);
+console.log (salida);
