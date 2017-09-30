@@ -1,17 +1,18 @@
-/* solucion reto 21*/
-function computeSumBetween(num1, num2) {
-    var suma= 0;
-    if(num2<num1){
-        return 0
-    }else{
-        for(var i = num1; i<num2; i++){
-            suma += i
-        }
+function convertObjectToList(obj) {
+    var key= Object.keys(obj)
+    var value= Object.values(obj)
+    var agregoArray=[]
+    for(var i = 0; i < key.length; i++){
+        agregoArray.push([key[i], value[i]])
     }
-    return suma
+    return agregoArray
 }
 
 
 //datos del ejemplo
-var output = computeSumBetween (2, 5);
+var salida = convertObjectToList ({
+  name: 'Holly',
+  edad: 35,
+  papel: 'productor'
+});
 console.log (salida);
