@@ -20,3 +20,15 @@ var obj = {
 };
 removeStringValuesLongerThan(6, obj);
 console.log(obj);
+
+
+// otra manera de hacerlo mas sencilla
+/*function removeStringValuesLongerThan(num, obj) {
+    for(var i in obj){
+        if (obj[i].length > num){   
+            delete obj[i];
+        }
+    }
+    return obj
+}
+*/
