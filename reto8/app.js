@@ -15,3 +15,16 @@ function findPairForSum(array, number){
 //datos ejemplo
 var pair = findPairForSum([3, 34, 4, 12, 5, 2], 9);
 console.log(pair);
+
+/*function findPairForSum(array, number){
+	var  pair = []
+	for(var i = 0; i<array.length; i++){
+		for(var j = 0; j<array.lenght; j++){
+			if(array[i] + array[j] == number && i!=j){
+				pair.push(array[i])
+				pair.push(array[j])
+				return pair
+			}
+		}
+	}
+}*/
